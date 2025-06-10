@@ -7,7 +7,7 @@ import WhatDoYouThink from "./WhatDoYouThink"; // <-- Import new page
 
 function App() {
   return (
-    <Router name="/outing">
+    <Router basename="/outing">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/why-me" element={<WhyMe />} />
