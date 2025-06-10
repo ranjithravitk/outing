@@ -2,7 +2,7 @@
   "name": "outing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ranjithdevelops.github.io/outing",
+  "homepage": "https://ranjithravitk.github.io/outing",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
