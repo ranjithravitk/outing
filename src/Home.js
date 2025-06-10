@@ -24,7 +24,7 @@ function Home() {
       }}
     >
       <motion.img
-        src="/dog.jpg"
+        src={process.env.PUBLIC_URL + "/dog.jpg"}
         alt="Side-eye dog"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

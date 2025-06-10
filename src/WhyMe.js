@@ -267,16 +267,16 @@ function WhyMe() {
           }}
         >
           {[
-            "/me1.jpg",
-            "/me2.jpg",
-            "/me3.jpg",
-            "/me4.jpg",
-            "/me5.jpg",
-            "/me7.jpg",
-          ].map((src, idx) => (
+            "me1.jpg",
+            "me2.jpg",
+            "me3.jpg",
+            "me4.jpg",
+            "me5.jpg",
+            "me7.jpg",
+          ].map((fileName, idx) => (
             <SwiperSlide key={idx}>
               <img
-                src={src}
+                src={process.env.PUBLIC_URL + "/" + fileName}
                 alt={`Me ${idx + 1}`}
                 style={{
                   width: "100%",

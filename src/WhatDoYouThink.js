@@ -28,7 +28,7 @@ function WhatDoYouThink() {
       </h1>
 
       <img
-        src="/dogs.png"
+        src={process.env.PUBLIC_URL + "/dogs.png"}
         alt="Happy dogs"
         style={{
           maxWidth: "300px",

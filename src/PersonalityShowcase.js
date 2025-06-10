@@ -8,35 +8,35 @@ const personalities = [
     name: "Adventurous",
     description:
       "Always ready to explore new horizons... or at least the nearest cave entrance. Adventure mode: activated!",
-    img: "/me6.jpg",
+    img: "me6.jpg",
   },
   {
     id: 2,
     name: "Sportive",
     description:
       "Pro footballer in the making — or just really good at pretending I know what I’m doing!",
-    img: "/me9.jpg",
+    img: "me9.jpg",
   },
   {
     id: 3,
     name: "Funny",
     description:
       "Guaranteed to make you laugh — or at least look as excited as I do when I see my favorite food!",
-    img: "/me8.jpg",
+    img: "me8.jpg",
   },
   {
     id: 4,
     name: "Creative",
     description:
       "I like art and creativity — plus, I can make fancy wreaths that’ll make us look like the coolest duo at any party!",
-    img: "/me11.jpg",
+    img: "me11.jpg",
   },
   {
     id: 5,
     name: "Kind",
     description:
       "I’m basically a Disney prince — just look at all these birds and swans flocking to my kindness! 🤣",
-    img: "/me12.jpg",
+    img: "me12.jpg",
   },
 ];
 
@@ -86,17 +86,17 @@ function PersonalityShowcase() {
               alignItems: "center",
               gap: "20px",
               // Add padding-top only for me11.jpg card
-              ...(img === "/me11.jpg" ? { paddingTop: "60px" } : {}),
-              ...(img === "/me12.jpg" ? { padding: "90px" } : {}),
+              ...(img === "me11.jpg" ? { paddingTop: "60px" } : {}),
+              ...(img === "me12.jpg" ? { padding: "90px" } : {}),
             }}
           >
             <img
-              src={img}
+              src={process.env.PUBLIC_URL + "/" + img}
               alt={name}
               style={{
-                width: img === "/me12.jpg" ? "490px" : "320px",
+                width: img === "me12.jpg" ? "490px" : "320px",
                 // increase height for me11.jpg
-                height: img === "/me11.jpg" ? "400px" : "320px",
+                height: img === "me11.jpg" ? "400px" : "320px",
                 borderRadius: "20px",
                 objectFit: "cover",
                 boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
